@@ -1,7 +1,7 @@
 # config_set.yaml
 metadata:
   name: gcp-ragna
-  nebari_version: ">2025.1.1"
+  nebari_version: ">2024.1.1" #">2025.1.1"
   description: A config set for running ragna on GCP.  Defines GPU node groups and profiles, ragna conda env, and ragna app
 config:
   google_cloud_platform:
@@ -133,9 +133,9 @@ config:
               "share_with": {
                 "users": [], 
                 "groups": ["/admin"]
+              },
               # ragna logo
-              "thumbnail": >
-                "data:image/jpeg;base64,
+              "thumbnail": "data:image/jpeg;base64,
                 /9j/4AAQSkZJRgABAQEASABIAAD/4QCuRXhpZgAASUkqAAgAAAAHABIBAwABAAAAAQAAABoBBQAB
                 AAAAYgAAABsBBQABAAAAagAAACgBAwABAAAAAgAAADEBAgANAAAAcgAAADIBAgAUAAAAgAAAAGmH
                 BAABAAAAlAAAAAAAAABIAAAAAQAAAEgAAAABAAAAR0lNUCAyLjEwLjM4AAAyMDI1OjAxOjI5IDA5
@@ -1213,8 +1213,7 @@ config:
                 zmZt2gY/hYP4WA2+rFCKQEShSgBp0N9cdJuARwbi0IhyJDxhv8cZ4wGiVVEWYSEUYZ2TEu8A+QyI
                 qnUHBwQgEAbB0QxKzk7kkkGk4/hYP4WAnylBRAipDr1EsEOTqSvYxv4j+Fg/hYDUicQMDCCe2CEY
                 arOgCIwtRkzJk0sKKCKIAhYVib7vWFwHwZKoFAKsBVy4BPcPoVEbHDvsAY55Ma//ACGf/9k=",
-              },
-          },
+            },
         },
       ]
     }
